@@ -1,0 +1,4 @@
+DuploBalanceamento=({S},{a,b},prod,S)
+prod
+S -> ab
+S -> aSb

@@ -1,0 +1,10 @@
+RandomGLC=({S,A,B,T},{a,b},prod,S)
+prod
+S -> AT
+S -> TB
+T -> aTb
+T -> b
+A -> Aa
+A -> a
+B -> Bb
+B -> b

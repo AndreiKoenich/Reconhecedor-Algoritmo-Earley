@@ -1,0 +1,8 @@
+ExpressaoRegular=({S,A,B,C},{x,y,(,),*,+},prod,S)
+prod
+S -> (S)
+S -> S*
+S -> x
+S -> y
+S -> S+S
+S -> SS

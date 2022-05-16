@@ -1,0 +1,8 @@
+ExpressaoMatematica=({S,T,F},{+,*,[,],x},prod,S)
+prod
+S -> T
+S -> S+T
+T -> F
+T -> T*F
+F -> [S]
+F -> x
