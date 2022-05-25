@@ -14,8 +14,8 @@ import os
 import sys
 
 SIMBOLOMARCADOR = bytes([254]).decode('cp437')[0] # Constante representando o simbolo marcador do algoritmo de Earley.
-DELIMITADOR_ESQ = bytes([179]).decode('cp437')[0] # Constante para demarcar o caractere da palavra sendo analisado.
-DELIMITADOR_DIR = bytes([179]).decode('cp437')[0] # Constante para demarcar o caractere da palavra sendo analisado.
+DELIMITADOR_ESQ = bytes([179]).decode('cp437')[0] # Constante para demarcar o caractere da palavra sendo analisada.
+DELIMITADOR_DIR = bytes([179]).decode('cp437')[0] # Constante para demarcar o caractere da palavra sendo analisada.
 INICIOLADODIREITO = 5                             # Constante para indicar o ponto em que inicia o lado direito da producao no arquivo de entrada.
 
 class InfoGLC: # Classe para armazenar todas as informacoes relevantes da GLC do arquivo de entrada.
