@@ -7,13 +7,13 @@
 
 # Referencias:
 # https://pt.wikipedia.org/wiki/Algoritmo_Earley
-# https://www.youtube.com/watch?v=7u03UcbM-qU&feature=youtu.be
+# https://www.youtube.com/watch?v=7u03UcbM-qU
 # https://www.youtube.com/watch?v=WkmV_a9q5Qw
 
 import os
 import sys
 
-SIMBOLOMARCADOR = bytes([254]).decode('cp437')[0] # Constante representando o simbolo marcador do algoritmo de Earley.
+SIMBOLOMARCADOR = '*' # Constante representando o simbolo marcador do algoritmo de Earley.
 DELIMITADOR_ESQ = bytes([179]).decode('cp437')[0] # Constante para demarcar o caractere da palavra sendo analisada.
 DELIMITADOR_DIR = bytes([179]).decode('cp437')[0] # Constante para demarcar o caractere da palavra sendo analisada.
 INICIOLADODIREITO = 5                             # Constante para indicar o ponto em que inicia o lado direito da producao no arquivo de entrada.
@@ -50,17 +50,14 @@ def encontra_indice(palavra, caractere, nth): # Retorna o indice da n-esima ocor
 
 def erro_primeira(): # Informa ao usuario que ha erro na primeira linha do arquivo de entrada.
     print('\nErro de sintaxe na primeira linha do arquivo contendo a GLC. Fim do programa.\n')
-    os.system("PAUSE")
     sys.exit()
 
 def erro_segunda(): # Informa ao usuario que ha erro na segunda linha do arquivo de entrada.
     print('\nErro na segunda linha do arquivo contendo a GLC (nome das regras de producao). Fim do programa.\n')
-    os.system("PAUSE")
     sys.exit()
 
 def erro_producoes(numero_linha): # Informa ao usuario que ha erro em alguma das regras de producao no arquivo de entrada.
     print('\nErro na regra de producao da linha', numero_linha, '. Fim do programa.\n')
-    os.system("PAUSE")
     sys.exit()
 
 def acha_erros(linha): # Controle de sintaxe da primeira linha do arquivo.
@@ -367,7 +364,6 @@ def analise_earley(informacoes,uteis,palavra,numero_conjunto): # Aplica a operac
         print('RESULTADO FINAL:')
         print('A palavra NAO PODE ser gerada pela GLC inserida.\nNenhuma operacao de SCAN pode ser realizada no conjunto D', numero_conjunto, sep='', end='.\n')
         print('\n')
-        os.system("PAUSE")
         sys.exit() # Encerra a execucao do programa, pois a palavra foi rejeitada.
 
     tamanho_antes = -1
@@ -456,6 +452,5 @@ def inicia_programa():
 
 def main():
     inicia_programa()
-    os.system("PAUSE")
 
 main()
