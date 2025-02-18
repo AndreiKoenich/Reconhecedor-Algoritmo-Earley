@@ -2,7 +2,7 @@ RECONHECEDOR DE PALAVRAS GERADAS POR GRAMATICA LIVRE DE CONTEXTO COM ALGORITMO D
 
 Autor: Andrei Pochmann Koenich
 
-O programa a seguir recebe um arquivo de entrada contendo uma Gramatica Livre de Contexto (GLC) de acordo com uma sintaxe e uma palavra, e informa
+Este programa em Python recebe um arquivo de entrada contendo uma Gramatica Livre de Contexto (GLC) de acordo com uma sintaxe e uma palavra, e informa
 ao usuario se a palavra inserida pode ser gerada pela GLC do arquivo de entrada, por meio da utilização do algoritmo de Earley, com a aplicacao
 do algoritmo sendo demonstrada de forma detalhada em cada passo.
 
